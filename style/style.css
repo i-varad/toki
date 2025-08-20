@@ -111,6 +111,17 @@ body>* {
 }
 
 
+.toki-footer{
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    transform: translate(-50%);
+
+    font-family: var(--primary-font);
+    font-size: .9rem;
+}
+
+
 /* Media Queries */
 @media only screen and (max-width: 850px) {
 
@@ -170,5 +181,10 @@ body>* {
 
     .toki-header .logo-slogan {
         font-size: .6rem;
+    }
+
+    .toki-footer{
+        
+        font-size: .8rem;
     }
 }
