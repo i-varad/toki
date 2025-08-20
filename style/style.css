@@ -1,17 +1,18 @@
-
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --primary-font : 'Epilogue';
-    --timer-font : 'Outfit';
+:root {
+    --primary-font: 'Epilogue';
+    --timer-font: 'Outfit';
+    --color-primary: #FAF9EE;
+    --color-accent: #7533ff;
+    --bg-opacity: rgba(0, 0, 0, 0.380);
 }
 
-body{
+body {
 
     height: 100vh;
     width: 100%;
@@ -26,78 +27,68 @@ body{
     background-position: center;
 
     color: #FAF9EE;
+
 }
 
-body::before{
+body::before {
     content: '';
     position: absolute;
     height: 100vh;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.380);
+    background-color: var(--bg-opacity);
     z-index: 1;
 }
 
-body > *{
+body>* {
     position: relative;
     z-index: 2;
 }
 
 
-.toki-header{
+.toki-header {
     padding: 3rem 3rem;
     font-family: var(--primary-font);
 }
 
-.toki-header .toki-logo{
-
+.toki-header .toki-logo {
     font-size: 3rem;
     font-weight: 700;
-    
 }
 
-.toki-header .logo-slogan{
+.toki-header .logo-slogan {
     font-size: 1.05rem;
 }
 
 
-.wrapper-stopwatch{
-  
-    
+.wrapper-stopwatch {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
 }
-.wrapper-stopwatch .stopwatch-time{
-    
+
+.wrapper-stopwatch .stopwatch-time {
     font-family: var(--timer-font);
     font-size: 10rem;
     font-weight: 700;
 }
 
-.wrapper-stopwatch .stopwatch-controls{
-    
+.wrapper-stopwatch .stopwatch-controls {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
 }
 
-.stopwatch-controls button{
-    
+.stopwatch-controls button {
+    padding: .9rem 1.6rem 0.6rem 1.6rem;
 
-    
-
-    padding: .9rem 1.6rem 0.6rem 1.6rem ;
-    
     border: none;
     border-radius: 1.5rem;
     outline: none;
@@ -106,15 +97,15 @@ body > *{
 
 }
 
-.stopwatch-controls .start{
+.stopwatch-controls .start {
     font-family: var(--primary-font);
-    background-color: #7533ff;
-    color: #FAF9EE;
+    background-color: var(--color-accent);
+    color: var(--color-primary);
 }
 
-.stopwatch-controls .reset{
+.stopwatch-controls .reset {
     background-color: transparent;
-    color: #FAF9EE;
+    color: var(--color-primary);
     font-size: 2rem;
-    padding: .9rem 0rem 0.6rem 0rem ;
+    padding: .9rem 0rem 0.6rem 0rem;
 }
