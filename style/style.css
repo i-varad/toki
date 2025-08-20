@@ -109,3 +109,66 @@ body>* {
     font-size: 2rem;
     padding: .9rem 0rem 0.6rem 0rem;
 }
+
+
+/* Media Queries */
+@media only screen and (max-width: 850px) {
+
+    .wrapper-stopwatch .stopwatch-time {
+        font-size: 8rem;
+    }
+
+    .stopwatch-controls button {
+        padding: .8rem 1.5rem 0.5rem 1.5rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .stopwatch-controls .reset {
+        font-size: 1.5rem;
+        padding: .9rem 0rem 0.6rem 0rem;
+    }
+
+    .toki-header {
+        padding: 2rem 2rem;
+    }
+
+    .toki-header .toki-logo {
+        font-size: 2rem;
+    }
+
+    .toki-header .logo-slogan {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+
+
+    .wrapper-stopwatch .stopwatch-time {
+        font-size: 4.5rem;
+    }
+
+    .stopwatch-controls button {
+        padding: .6rem 1rem 0.3rem 1rem;
+        font-size: .8rem;
+        font-weight: 600;
+    }
+
+    .stopwatch-controls .reset {
+        font-size: 1rem;
+        padding: .9rem 0rem 0.6rem 0rem;
+    }
+
+    .toki-header {
+        padding: 1.5rem 1.5rem;
+    }
+
+    .toki-header .toki-logo {
+        font-size: 1.5rem;
+    }
+
+    .toki-header .logo-slogan {
+        font-size: .6rem;
+    }
+}
